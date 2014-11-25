@@ -1,33 +1,27 @@
 package Model;
 
-import java.util.Calendar;
 
 public class ExchangeRate {
-    private final Number rate;
-    private final Currency fromCurrency;
-    private final Currency toCurrency;
-    private final Calendar date;
-    
-    public ExchangeRate(Number rate, Currency fromCurrency, Currency toCurrency, Calendar date) {
+
+    private final Currency in;
+    private final Currency out;
+    private final double rate;
+
+    public ExchangeRate(Currency in, Currency out, double rate) {
+        this.in = in;
+        this.out = out;
         this.rate = rate;
-        this.fromCurrency = fromCurrency;
-        this.toCurrency = toCurrency;
-        this.date = date;
     }
 
-    public Number getRate() {
+    public Currency getIn() {
+        return in;
+    }
+
+    public Currency getOut() {
+        return out;
+    }
+
+    public double getRate() {
         return rate;
-    }
-
-    public Currency getFromCurrency() {
-        return fromCurrency;
-    }
-
-    public Currency getToCurrency() {
-        return toCurrency;
-    }
-
-    public Calendar getDate() {
-        return date;
     }
 }

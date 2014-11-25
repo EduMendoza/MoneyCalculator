@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Persistence;
 
-/**
- *
- * @author usuario
- */
+import Model.Currency;
+import Model.CurrencySet;
+
 public class CurrencySetLoader {
-    
+
+    public void load(){
+        CurrencySet currencySet = new CurrencySet();
+        currencySet.add(new Currency("Euro","EUR", "€"));
+        currencySet.add(new Currency("Libra","GBP","£"));
+        currencySet.add(new Currency("DÃ³lar","USD","$"));
+    }
 }
