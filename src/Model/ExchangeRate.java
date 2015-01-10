@@ -1,6 +1,5 @@
 package Model;
 
-
 public class ExchangeRate {
 
     private final Currency in;

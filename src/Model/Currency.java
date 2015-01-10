@@ -5,7 +5,7 @@ public class Currency {
     private final String name;
     private final String code;
 
-    public Currency(String symbol, String name, String code) {
+    public Currency(String name, String code, String symbol) {
         this.symbol = symbol;
         this.name = name;
         this.code = code;

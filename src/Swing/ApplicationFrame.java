@@ -12,8 +12,9 @@ import UI.ExchangeDialog;
 
 public class ApplicationFrame extends JFrame {
     private ExchangeDialogPanel exchangeDialog;
+    private DialogPanel area;
     ActionListener actionListener;
-    private Currency[] currencies;
+    final Currency[] currencies;
     
     
     public ApplicationFrame(Currency[] currencies){
@@ -26,7 +27,8 @@ public class ApplicationFrame extends JFrame {
     }
 
     private void createWidgets() {
-        add(createExchangeDialog(), BorderLayout.WEST);
+        add(createTextDialog(), BorderLayout.CENTER);
+        add(createExchangeDialog(), BorderLayout.PAGE_START);
         add(createCalculateButton(), BorderLayout.SOUTH);
     }
 
@@ -39,6 +41,13 @@ public class ApplicationFrame extends JFrame {
     public ExchangeDialog getExchangeDialog(){
         return exchangeDialog;
     }
+    
+    private Component createTextDialog() {
+        DialogPanel panel = new DialogPanel();
+        this.area = panel;
+        return panel;
+    }
+    
     
     private Component createCalculateButton() {
         JButton button = new JButton("Calculate");
@@ -56,4 +65,8 @@ public class ApplicationFrame extends JFrame {
     public void register(ActionListener actionListener){
         this.actionListener= actionListener;
     }
+
+    public DialogPanel getTextArea() {
+        return area;
+    } 
 }

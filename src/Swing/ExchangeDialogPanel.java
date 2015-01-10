@@ -30,20 +30,17 @@ public class ExchangeDialogPanel extends JPanel implements ExchangeDialog{
     }
 
     private JComponent createTextField() {
-        JTextField textField = new JTextField(10);
-        this.textField = textField;
+        textField = new JTextField(10);
         return textField;
     }
 
     private Component createFromCurrency() {
-        JComboBox<Currency> currencyFrom = new JComboBox<>(currencies);
-        this.currencyFrom = currencyFrom;
+        currencyFrom = new JComboBox<>(currencies);
         return currencyFrom;
     }
 
     private Component createToCurrency() {
-        JComboBox<Currency> currencyTo = new JComboBox<>(currencies);
-        this.currencyTo  = currencyTo;
+        currencyTo = new JComboBox<>(currencies);
         return currencyTo;
     }
 
