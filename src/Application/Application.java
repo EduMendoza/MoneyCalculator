@@ -1,14 +1,14 @@
 package Application;
 
-import Swing.MoneyDisplay;
+import UI.Swing.MoneyDisplay;
 import Controller.ExchangeOperation;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import Model.Currency;
 import Model.CurrencySet;
-import File.CurrencySetLoader;
-import File.ExchangeRateLoader;
-import Swing.ApplicationFrame;
+import Persistence.File.CurrencySetLoader;
+import Persistence.File.ExchangeRateLoader;
+import UI.Swing.ApplicationFrame;
 
 public class Application {
 

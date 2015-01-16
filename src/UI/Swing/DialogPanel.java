@@ -1,4 +1,4 @@
-package Swing;
+package UI.Swing;
 
 import javax.swing.JComponent;
 import javax.swing.JPanel;

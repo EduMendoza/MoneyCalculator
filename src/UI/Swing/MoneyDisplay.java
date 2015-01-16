@@ -1,4 +1,4 @@
-package Swing;
+package UI.Swing;
 
 import java.text.DecimalFormat;
 import Model.Money;

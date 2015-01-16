@@ -1,4 +1,4 @@
-package Swing;
+package UI.Swing;
 
 import java.awt.Component;
 import java.awt.FlowLayout;
